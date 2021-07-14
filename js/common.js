@@ -56,6 +56,14 @@ $('.slider-big').slick({
   dots: true,
   fade: true,
   asNavFor: ".slider-small",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+      }
+    }
+  ]
 });
 
 
