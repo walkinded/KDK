@@ -10,4 +10,4 @@
 
 5. Новости https://walkinded.github.io/KDK/last-news.html
 
-6. Новость (in work)
+6. Статья (in work)
