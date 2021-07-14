@@ -1140,6 +1140,14 @@ footer {
     background-attachment: fixed;
 }
 
+.content10_bg {
+    background: url(../img/faq_bg.jpg) no-repeat center top / cover;
+    min-height: 1117px;
+    background-attachment: fixed;
+
+    padding: 0 0 70px;
+}
+
 /* START set content2 */
 .page-title {
     position: relative;
