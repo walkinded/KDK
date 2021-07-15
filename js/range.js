@@ -25,6 +25,7 @@ jQuery(($) => {
       }
   });
 
+
   $('.select').on('click', '.select__item', function () {
       $('.select__head').removeClass('open');
       $(this).parent().fadeOut();

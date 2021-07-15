@@ -2,12 +2,28 @@ const menuBtn = document.querySelector(".menu-btn");
 
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
+  document.getElementById("myDropdown").classList.toggle("show");
   if(!menuOpen) {
     menuBtn.classList.add("open");
-    menuOpen = true;
+    menuOpen = true; 
   } else {
     menuBtn.classList.remove("open");
     menuOpen = false;
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.menu-btn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          menuBtn.classList.remove("open");
+          menuOpen = false;
+        }
+      }
+    }
   }
 });
 
@@ -81,3 +97,22 @@ $(document).ready(function($) {
     $(selectTab).fadeIn();
   });
 });
+
+// function myFunction() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// // Закройте выпадающее меню, если пользователь щелкает за его пределами
+// window.onclick = function(event) {
+  
+  // if (!event.target.matches('.menu-btn')) {
+  //   var dropdowns = document.getElementsByClassName("dropdown-content");
+  //   var i;
+  //   for (i = 0; i < dropdowns.length; i++) {
+  //     var openDropdown = dropdowns[i];
+  //     if (openDropdown.classList.contains('show')) {
+  //       openDropdown.classList.remove('show');
+  //     }
+  //   }
+  // }
+// }
