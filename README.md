@@ -10,6 +10,6 @@
 
 5. Новости https://walkinded.github.io/KDK/last-news.html
 
-6. Статья https://walkinded.github.io/KDK/
+6. Статья https://walkinded.github.io/KDK/article.html
 
-7. Контакты https://walkinded.github.io/KDK/
+7. Контакты https://walkinded.github.io/KDK/contacts.html
