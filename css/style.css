@@ -685,6 +685,14 @@ footer {
 .header-content .header__top a:hover::after {
     opacity: 1;
 }
+
+.footer__links_img {
+    transition: all .3s;
+}
+
+.footer__links_img:hover {
+    transform: scale(1.1);
+}
 .header__links {
     margin-left: auto;
 }
@@ -1967,9 +1975,7 @@ body,html {
 
     display: flex;
     align-items: center;
-
-    position: relative;
-    top: 6px
+    margin-right: 100px;
 }
 
 .header__text ul {
@@ -1978,7 +1984,13 @@ body,html {
 }
 
 .header__text li {
-margin-right: 40px;
+    margin-right: 40px;
+}
+
+.header__text li a {
+   text-decoration: none;
+   font-size: 14px;
+   font-family: 'Fira Sans';
 }
 .header__phones {
     display: flex;
@@ -3164,12 +3176,17 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .select_color .select__head::after {
-    background-color: transparent;
+    background: url('../img/icon/nav_arr_down_icon.svg') no-repeat center / cover;
+}
+
+.select_color .select__head.open::after {
+    background: url('../img/icon/nav_arr_up_icon.svg') no-repeat center / cover;
+    transform: translateY(50%) rotate(180deg);
+    
 }
 
 .select_color .select__head:hover {
     color: #FF5357;
-    transition: .3s;
 }
 
 .select_color .select__item {
@@ -3178,6 +3195,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .select_color .select__item a {
     color: #000;
+    transition: .0s;
 }
 
 .select_color .select__item:hover  a{
