@@ -1967,6 +1967,9 @@ body,html {
 
     display: flex;
     align-items: center;
+
+    position: relative;
+    top: 6px
 }
 
 .header__text ul {
@@ -3477,7 +3480,112 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   .show {display:block;}
 
 
+/*  */
+.main-contacts {
+    position: relative;
+    display: block;
+    background: #F3F4F4;
 
+    padding: 0px 0px 70px;
+}
+.contacts__map {
+    position: relative;
+    width: 100%;
+    height: 643px;
+}
+
+.contacts__map::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    background: linear-gradient(90.08deg, rgba(243, 244, 244, 0.85) 39.72%, rgba(255, 255, 255, 0) 99.92%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.main-contacts__body {
+    position: absolute;
+    width: 100%;
+
+    top: 53px;
+
+    display: flex;
+    pointer-events: none;
+    /* justify-content: space-between; */
+}
+
+.main-contacts__body  .button-fomra {
+    padding: 18px 55px;
+}
+
+.main-contacts__item {
+    pointer-events: all;
+}
+
+.main-contacts__item .house-proj__title {
+    margin-bottom: 35px;
+}
+
+.main-contacts__column {
+    margin-bottom: 25px;
+}
+
+.column__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #161B20;
+
+    margin-bottom: 9px;
+}
+
+.column__subtitle {
+    font-size: 15px;
+    line-height: 27px;
+    /* or 180% */
+
+
+    color: #4E4E4E;
+}
+
+.column__subtitle a {
+    color: #4E4E4E;
+}
+
+.column__subtitle a:hover {
+    color: #FF5357;
+}
+
+.main-contacts__row {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+
+    pointer-events: all;
+}
+
+.main-contacts__row ul {
+    display: flex;
+}
+
+.main-contacts__row li {
+    width: 40px;
+    height: 40px;
+    margin: 0px 14px;
+    transition: all .4s;
+}
+
+.main-contacts__row li:hover {
+    transform: scale(1.1);
+}
+
+.main-contacts__row img {
+    width: 40px;
+    height: 40px;
+}
+/*  */
 
    /* MEDIA */
 
@@ -4224,6 +4332,34 @@ input[type=range]:focus::-webkit-slider-runnable-track {
         font-size: 30px;
         line-height: 60px;
         letter-spacing: 0.02em;
+    }
+
+    .main-contacts {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-contacts__body {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-contacts__row {
+        position: initial;
+        margin-top: 50px;
+    }
+    .contacts__map {
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+    
+    .contacts__map::after {
+        background: none;
+    }
+
+    .main-contacts {
+        padding: 0;
     }
    }
    @media (max-width: 650px) {     
