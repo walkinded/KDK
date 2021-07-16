@@ -3123,7 +3123,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 
 /* article */
-.article-page__navigation {
+.navigation {
     background: #3D4348;
     padding: 10px 0px;
 }
