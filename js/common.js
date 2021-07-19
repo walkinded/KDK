@@ -1,3 +1,4 @@
+/*
 const menuBtn = document.querySelector(".menu-btn");
 
 let menuOpen = false;
@@ -26,6 +27,7 @@ menuBtn.addEventListener("click", () => {
     }
   }
 });
+*/
 
 
 
@@ -83,6 +85,44 @@ $('.slider-big').slick({
 });
 
 
+$('.reviews__slider').slick({
+  arrows: true,
+  dots: true,
+  slidesToShow: 3,
+  speed: 1000,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  rows: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        speed: 1000,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        speed: 1000,
+      },
+    },
+    {
+      breakpoint: 1366,
+      settings: {
+        arrows: true,
+        slidesToShow: 3,
+        speed: 1000,
+      },
+    }
+  ]
+});
+
+
 $(document).ready(function($) {
   $('.tab_content').hide();
   $('.tab_content:first').show();
@@ -97,22 +137,3 @@ $(document).ready(function($) {
     $(selectTab).fadeIn();
   });
 });
-
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-// // Закройте выпадающее меню, если пользователь щелкает за его пределами
-// window.onclick = function(event) {
-  
-  // if (!event.target.matches('.menu-btn')) {
-  //   var dropdowns = document.getElementsByClassName("dropdown-content");
-  //   var i;
-  //   for (i = 0; i < dropdowns.length; i++) {
-  //     var openDropdown = dropdowns[i];
-  //     if (openDropdown.classList.contains('show')) {
-  //       openDropdown.classList.remove('show');
-  //     }
-  //   }
-  // }
-// }
