@@ -13,3 +13,5 @@
 6. Статья https://walkinded.github.io/KDK/article.html
 
 7. Контакты https://walkinded.github.io/KDK/contacts.html
+
+8. Отзывы https://walkinded.github.io/KDK/reviews.html
