@@ -15,3 +15,5 @@
 7. Контакты https://walkinded.github.io/KDK/contacts.html
 
 8. Отзывы https://walkinded.github.io/KDK/reviews.html
+
+9. Услуги дом из ракушечника https://walkinded.github.io/KDK/service.html
