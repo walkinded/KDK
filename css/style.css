@@ -3960,8 +3960,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 /* ==================== main-service ==================== */
 .main-service {
   background: url(../img/back/main-service-bg.jpg) no-repeat center top / cover;
+  width: 100%;
   min-height: 916px;
   background-attachment: fixed;
+  position: fixed;
 
   position: relative;
 
