@@ -1,4 +1,4 @@
-$('.header_black').addClass('original').clone().insertAfter('header').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+$('.navigation').addClass('original').clone().insertAfter('header').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 
 scrollIntervalID = setInterval(stickIt, 10);
 

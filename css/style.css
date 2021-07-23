@@ -4187,10 +4187,6 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   opacity: 0.5;
 }
 
-.box-container_posi-rel {
-  position: relative;
-}
-
 .main-contacts_no-padding {
   padding: 0;
 }
@@ -5215,8 +5211,9 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   .header__wrap .flex-item {
     display: flex;
   }
-  .navigation {
-    display: none;
+  .navigation,
+  .cloned {
+    display: none !important;
   }
   .header__top .burger {
     margin-right: 20px;
