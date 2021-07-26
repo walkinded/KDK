@@ -1770,6 +1770,7 @@ section {
 }
 .certs {
   width: 398px;
+  font-family: var(--font-cormorant);
 }
 .certificate {
   position: relative;
@@ -4033,6 +4034,8 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   text-transform: uppercase;
 
   color: var(--title-color);
+
+  margin-bottom: 50px;
 }
 .btn-gradient-large {
   display: flex;
@@ -4195,6 +4198,47 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 
   background: radial-gradient(50% 50% at 50% 50%, #747474 36.46%, rgba(196, 196, 196, 0) 100%);
   opacity: 0.5;
+}
+
+.view-plans-btn {
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 35px;
+  /* or 250% */
+
+
+  color: #224561;
+
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: underline;
+  /* border-bottom: 1px solid #224561; */
+
+  margin-top: 30px;
+  transition: .3s;
+
+
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.view-plans-btn:hover {
+  background: rgba(255, 255, 255, 0.0);
+  border-radius: 0px;
+  padding: 0px 0px;
+  transition: .3s;
+}
+
+.view-plans-btn img {
+  width: 14px;
+  height: 7px;
+  margin-left: 10px;
 }
 
 .main-contacts_no-padding {
@@ -4484,7 +4528,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   margin-bottom: 35px;
 }
 
-
+/* ==================== benefit ==================== */
 .benefit {
   background: url('../img/service/benefit-bg.jpg') no-repeat center top / cover;
 
@@ -4612,7 +4656,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   margin: 20px 0px 30px;
 }
 
-
+/* ==================== our-works ==================== */
 .our-works {
   background: url('../img/service/our-works-bg.jpg') no-repeat center top / cover;
   display: flex;
@@ -4624,6 +4668,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 
 .our-works-slider-big{
   position: relative !important;
+  margin-top: 30px;
 }
 
 .our-works-lider-big .slider__item {
@@ -4801,6 +4846,157 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 .our-works-slider-small .slider__item:not(.slick-center)  {
   filter: grayscale(80%);
 }
+
+
+/* ==================== material-block ==================== */
+.material-block {
+  background: #F3F4F5;
+  /* width: 100%; */
+}
+
+.material-block__desc {
+  max-width: 923px;
+  width: 100%;
+
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+
+  color: var(--text-color-dark);
+
+  margin: 0 auto;
+}
+.material-block__characteristics {
+}
+.characteristics__title {
+  font-family: var(--font-cormorant);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: var(--title-color);
+}
+.material-block__characteristics img {
+
+}
+
+.types-technology {
+}
+
+.types-technology__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.types-technology__item {
+  /* max-width: 675px; */
+  width: 48%;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 59px;
+}
+.types-technology__img {
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  border: 1px solid #747474;
+
+  padding: 10px;
+
+  border-radius: 50%;
+}
+
+.types-technology__img img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.types-technology__circle {
+  position: absolute;
+  bottom: 0px;
+  right: -40px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background: #F3F4F5;
+  border-radius: 50%;
+}
+
+.circle__inner {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  border: 1px solid #747474;
+  background: #F3F4F5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  font-family: var(--font-cormorant);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: var(--title-color);
+}
+
+.item__types-text {
+  margin-left: 40px;
+}
+
+.item__types-title {
+  font-family: var(--font-cormorant);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: var(--title-color);
+
+  margin-bottom: 20px;
+}
+
+.item__types-desc {
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+
+  color: var(--text-color-dark);
+  margin-left: 24px;
+}
+
 /* MEDIA */
 
 @media (max-width: 1395px) {
@@ -5183,7 +5379,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     margin: 0;
   }
   .main-service {
-    min-height: 990px;
+    min-height: 1040px;
   }
   .our-works-slider-big__item-text {
     padding: 60px 20px 10px 50px;
@@ -5243,6 +5439,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   .complete-set__item {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .types-technology__item {
+    width: 100%;
   }
 
 }
@@ -5419,6 +5619,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   .item_size-m,
   .item_size-l {
     min-height: 900px
+  }
+
+  .house-proj__title {
+    
   }
 }
 
@@ -5695,14 +5899,11 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     align-items: center;
   }
   .main-service {
-    min-height: 1215px;
+    min-height: 1310px;
+    background-attachment: initial;
   }
   .header_black {
     padding: 15px 0;
-  }
-
-  .main-service {
-    background-attachment: initial;
   }
 
   .header-li a {
@@ -5949,6 +6150,16 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     letter-spacing: 0.02em;
     margin: 0px auto 0px;
   }
+  .types-technology__item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .item__types-desc {
+    margin: 0;
+  }
+  .item__types-text {
+    margin: 10px 0px 0px;
+  }
 }
 @media (max-width: 450px) {
   .menu .title {
@@ -6059,7 +6270,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     width: 90%;
   }
   .main-service {
-    min-height: 1320px;
+    min-height: 1390px;
   }
   .border-box__list {
     max-width: max-content;
