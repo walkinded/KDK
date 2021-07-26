@@ -81,6 +81,68 @@ $('.slider-big').slick({
 });
 
 
+$('.our-works-slider-small').slick({
+  arrows: false,
+  dots: false,
+  slidesToShow: 5,
+  speed: 1000,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  centerMode: true,
+  rows: 1,
+  asNavFor: ".our-works-slider-big",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        speed: 1000,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        speed: 1000,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        slidesToShow: 3,
+        speed: 1000,
+      },
+    },
+    {
+      breakpoint: 1441,
+      settings: {
+        arrows: false,
+        slidesToShow: 3,
+        speed: 1000,
+      },
+    }
+  ]
+});
+$('.our-works-slider-big').slick({
+  arrows: true,
+  dots: true,
+  fade: true,
+  asNavFor: ".our-works-slider-small",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+      }
+    }
+  ]
+});
+
 $('.reviews__slider').slick({
   arrows: true,
   dots: true,
