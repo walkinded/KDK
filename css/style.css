@@ -1339,6 +1339,12 @@ footer li a {
   justify-content: space-between;
   align-items: center;
 }
+
+.why-delivery-from-us_container .feat__wrap {
+  max-width: 1115px;
+  width: 100%;
+  margin: 0px auto;
+}
 .feat__wrap .swiper-dots {
   display: none;
 }
@@ -3973,8 +3979,8 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 .main-service {
   background: url(../img/back/main-service-bg.jpg) no-repeat center top / cover;
   width: 100%;
-  min-height: 916px;
-  background-attachment: fixed;
+  min-height: 840px;
+  /* background-attachment: fixed; */
 
   position: relative;
 
@@ -4015,6 +4021,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   flex-direction: column;
   align-items: center;
 }
+.main-service__text_position {
+  max-width: max-content;
+  align-items: flex-start;
+}
 .text-title-m {
   
   font-style: normal;
@@ -4026,6 +4036,9 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   text-transform: uppercase;
 
   color: var(--title-color);
+}
+.text-title-m_size {
+  font-size: 59px;
 }
 .text-title-l {
   font-weight: 300;
@@ -4221,17 +4234,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 
   margin-top: 30px;
   transition: .3s;
-
-
-  background: rgba(255, 255, 255, 0.45);
-  border-radius: 5px;
-  padding: 0px 5px;
 }
 
 .view-plans-btn:hover {
-  background: rgba(255, 255, 255, 0.0);
-  border-radius: 0px;
-  padding: 0px 0px;
+  padding: 0px 5px;
   transition: .3s;
 }
 
@@ -4902,6 +4908,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   width: 100%;
 }
 
+.characteristics__position {
+  left: 50px !important;
+}
+
 .characteristic__list {
   display: none;
 
@@ -5401,6 +5411,9 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   .why-delivery-from-us {
     padding: 0;
   }
+  .why-delivery-from-us__inner {
+    border: none;
+  }
   /* .timeline__body {
     max-width: 1100px;
   } */
@@ -5867,6 +5880,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     width: 100%;
     margin: 0px auto 50px;
   }
+  .navigation,
+  .cloned {
+    display: none !important;
+  }
 
 }
 @media (max-width: 830px) {
@@ -5923,10 +5940,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   .header__wrap .flex-item {
     display: flex;
   }
-  .navigation,
-  .cloned {
-    display: none !important;
-  }
+  
   .header__top .burger {
     margin-right: 20px;
     margin-top: -5px;

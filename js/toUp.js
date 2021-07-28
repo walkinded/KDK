@@ -106,6 +106,31 @@ $(function(){
       },
     });
 
+    var featSlider = new Swiper('#feat__slider_container', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      watchSlidesProgress: true,
+      watchOverflow: true,
+      navigation: {
+        nextEl: '.feat__wrap .swiper-button-next',
+        prevEl: '.feat__wrap .swiper-button-prev',
+      },
+      pagination: {
+        el: '.feat__wrap .swiper-dots',
+      },
+      breakpoints: {
+        1400: {
+          slidesPerView: 3,
+        },
+        820: {
+          slidesPerView: 3,
+        },
+        580: {
+          slidesPerView: 2,
+        },
+      },
+    });
+
     var stepsSlider = new Swiper('#steps__slider', {
       slidesPerView: 1,
       spaceBetween: 10,
