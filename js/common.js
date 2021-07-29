@@ -27,7 +27,6 @@ function stickIt() {
 
 
 
-
 $('.slider-small').slick({
   arrows: false,
   dots: false,

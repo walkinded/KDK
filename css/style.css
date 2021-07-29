@@ -2766,6 +2766,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   margin-bottom: 22px;
 }
 
+.forma-horizontal__text .btn-gradient-large {
+  max-width: 310px;
+}
+
 .agreement {
   font-family: "Fira Sans", sans-serif;
   font-style: normal;
