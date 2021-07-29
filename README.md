@@ -17,3 +17,11 @@
 8. Отзывы https://walkinded.github.io/KDK/reviews.html
 
 9. Услуги дом из ракушечника https://walkinded.github.io/KDK/service.html
+
+10. Услуги дом из газобетона https://walkinded.github.io/KDK/service-gazobeton.html
+
+11. Услуги ландшафтный дизайн https://walkinded.github.io/KDK/service-landscape-design.html
+
+12. Услуги монолитные работы https://walkinded.github.io/KDK/service-monolithic-works.html
+
+13. Услуги коттеджные поселки https://walkinded.github.io/KDK/service-cottage-villages.html
