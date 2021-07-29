@@ -25,3 +25,6 @@
 12. Услуги монолитные работы https://walkinded.github.io/KDK/service-monolithic-works.html
 
 13. Услуги коттеджные поселки https://walkinded.github.io/KDK/service-cottage-villages.html
+
+
+13. Услуги отдельные виды работ https://walkinded.github.io/KDK/service-certain-works.html
