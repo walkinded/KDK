@@ -668,6 +668,21 @@ footer li a {
   height: 850px;
   background: url(../img/back/headerBack.jpg) no-repeat center top / cover;
 }
+
+.navigation_main-page {
+  display: none ;
+  width: 100%;
+}
+
+.navigation_main-page .custom-nav {
+}
+
+.main-page__scrolled {
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
 .header-content .page-title {
   margin-bottom: 20px;
 }

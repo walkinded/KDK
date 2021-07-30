@@ -88,6 +88,14 @@ $(function(){
     }
   }
 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 500){
+        $('.navigation_main-page').addClass('main-page__scrolled');
+    }else{ 
+        $('.navigation_main-page').removeClass('main-page__scrolled');    
+      }
+  });
+
   // $(document).mouseup(function (e) {
   //   var container = $(".modal .modal__content");
   //   if (container.has(e.target).length === 0 && !($(e.target).hasClass('modal__content')) ){
